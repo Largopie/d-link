@@ -1,5 +1,6 @@
-import GlobalStyle from "@/globalStyle"
-import styled from 'styled-components'
+import GlobalStyle from "@/globalStyle";
+import styled from "styled-components";
+import { Counter } from "./pages/counter";
 
 const H1 = styled.h1`
   color: purple;
@@ -14,9 +15,10 @@ const App = () => {
       <div>
         <GlobalStyle />
         <H1>App Page</H1>
+        <Counter />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
