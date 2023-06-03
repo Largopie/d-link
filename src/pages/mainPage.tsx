@@ -1,4 +1,5 @@
 import Header from "@/components/main/header";
+import Menu from "@/components/main/menu";
 import styled from "styled-components";
 
 const MainContainer = styled.div`
@@ -8,7 +9,7 @@ const MainContainer = styled.div`
 
 const ContentContainer = styled.div`
   width: 960px;
-  height: 100%;
+  height: calc(100% - 128px);
   margin: 0 auto;
   background-color: green;
 `;
@@ -17,6 +18,7 @@ const MainPage = () => {
   return (
     <MainContainer>
       <Header />
+      <Menu />
       <ContentContainer/>
     </MainContainer>
   );

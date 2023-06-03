@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  position: fixed;
   width: 100%;
   height: 80px;
   background-color: #048ad7;
