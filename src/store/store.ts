@@ -1,4 +1,4 @@
-import { Action, ThunkDispatch, configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import logger from "redux-logger"
 import counterReducer from "@store/slices/counterSlice"
 
