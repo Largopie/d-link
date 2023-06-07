@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 const MainContainer = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 48px;
-  background-color: #ffffff;
-  box-shadow: 0px 3px 6px #4E4E4E29;
 `;
 
 const SubContainer = styled.div`

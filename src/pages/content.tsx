@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 const ContentContainer = styled.div`
-  width: 960px;
+  width: 100vw;
   height: calc(100% - 128px);
-  margin: 0 auto;
   padding: 30px 0px 0px 0px;
 `;
 
