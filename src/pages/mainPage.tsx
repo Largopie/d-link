@@ -6,7 +6,7 @@ import Content from "@pages/content";
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: #f8fdff;
@@ -30,10 +30,11 @@ const MenuStyle = styled.div`
 `;
 
 const SubContainer = styled.div`
-  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  z-index: 1;
   height: 100vh;
-  
-  background-color: black;
 `;
 
 const MainPage = () => {
@@ -41,12 +42,11 @@ const MainPage = () => {
     <MainContainer>
       <HeaderStyle />
       <MenuStyle />
-      {/* <SubContainer>
-        123
-      </SubContainer> */}
-      {/* <Header />
-      <Menu />
-      <Content /> */}
+      <SubContainer>
+        <Header />
+        <Menu />
+        <Content />
+      </SubContainer>
     </MainContainer>
   );
 };

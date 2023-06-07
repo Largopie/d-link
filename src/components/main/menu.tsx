@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const MainContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 48px;
 `;
 
@@ -9,9 +9,8 @@ const SubContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 960px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
 `;
 
 const ExDiv = styled.div`

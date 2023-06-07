@@ -1,17 +1,14 @@
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 80px;
-  background-color: #048ad7;
 `;
 
 const SubContainer = styled.div`
-  width: 960px;
-  height: 100%;
   display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
 `;
