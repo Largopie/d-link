@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FiBell } from "react-icons/fi";
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -18,12 +19,22 @@ const ContentBox = styled.div`
   color: #ffffff;
 `;
 
+const NoticeBtn = styled.button`
+  :hover {
+    cursor: pointer;
+  }
+`;
+
 const Header = () => {
   return (
     <HeaderContainer>
       <SubContainer>
         <ContentBox>D-Link</ContentBox>
-        <ContentBox>Notice</ContentBox>
+        <ContentBox>
+          <NoticeBtn>
+            <FiBell size="18px" color="#ffffff" />
+          </NoticeBtn>
+        </ContentBox>
       </SubContainer>
     </HeaderContainer>
   );
