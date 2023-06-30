@@ -1,4 +1,3 @@
-import Notice from "@/components/contents/notice";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { changeClicked } from "@/store/slices/noticeSlice";
 import styled from "styled-components";
@@ -114,6 +113,12 @@ const ChooseDepartmentBtn = styled.div<PropsContainer>`
   }
 `;
 
+const NoticeContent = styled.div`
+  padding: 20px;
+  height: 200px;
+  border-radius: 0px 0px 8px 8px;
+`;
+
 const Content = () => {
   const clicked = useAppSelector((state) => state.notice.clicked);
   const dispatch = useAppDispatch();
@@ -148,7 +153,11 @@ const Content = () => {
                 학부공지
               </ChooseDepartmentBtn>
             </ChooseNotice>
-            <Notice />
+            {clicked === "division" ? (
+              <NoticeContent>division 입니다.</NoticeContent>
+            ) : (
+              <NoticeContent>department입니다.</NoticeContent>
+            )}
           </NoticeContainer>
           <LeftSubContainer>
             <ScheduleContainer />
